@@ -14,13 +14,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 50%;
   margin: 60px;
-  border-radius: 10px;
 }
 
 .container__img {
   width: 100%;
+  border-radius: 15px 15px 0 0;
 }
 
 .container-game {
@@ -43,11 +43,13 @@ body {
 
 .container__btn {
   width: 100%;
-  border: 1px 0px;
+  height: 50px;
+  border: none;
 }
 
 .container__btn-rules {
   background-color: #1fcca4;
+  margin: 0 0 2px 0;
 }
 
 .container__btn-rules:hover {
