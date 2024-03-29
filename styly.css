@@ -9,13 +9,13 @@ body {
   justify-content: center;
 }
 
-.container {
+.container-intro {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
   margin: 60px;
+  max-width: 80vmin;
 }
 
 .container__img {
@@ -41,30 +41,120 @@ body {
   color: #ffffff;
 }
 
-.container__btn {
+.container-btn {
   width: 100%;
   height: 50px;
   border: none;
 }
 
-.container__btn-rules {
+.container-btn__rules,
+.container-middle__home.icon {
   background-color: #1fcca4;
   margin: 0 0 2px 0;
 }
 
-.container__btn-rules:hover {
+.container-btn__rules:hover,
+.container-middle__home.icon:hover,
+.container-btn__rules:focus,
+.container-middle__home.icon:focus {
   background-color: #1cbb96;
 }
 
-.container__btn-play {
+.container-btn__play,
+.container-middle__restart.icon {
   background-color: #0197f6;
 }
 
-.container__btn-play:hover {
+.container-btn__play:hover,
+.container-middle__restart.icon:hover,
+.container-btn__play:focus,
+.container-middle__restart.icon:focus {
   background-color: #0090e9;
 }
 
-.container__link {
+.container-link {
   text-decoration: none;
   color: #ffffff;
+}
+
+/*new styles for hra.html*/
+.container-play {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80vmin;
+  height: 100vh;
+  margin: 10px;
+}
+
+.container-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.container-middle {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.container-middle .left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.container-middle .right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.container-middle__text {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.container-middle .icon {
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 4px;
+  width: 2rem;
+  height: 2rem;
+}
+
+.container-middle__circle.icon {
+  background-color: transparent;
+}
+
+.container-middle img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.container-playground {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, auto);
+}
+
+.container-playground .square {
+  border: 1px black solid;
+  aspect-ratio: 1/1;
+  padding: 0;
+  margin: 0;
+  height: 30px;
+  border-radius: 0;
+  opacity: 0.4;
+}
+
+.container-playground .square:focus,
+.container-playground .square:hover {
+  opacity: 0.6;
 }
