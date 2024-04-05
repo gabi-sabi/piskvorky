@@ -89,13 +89,12 @@ body {
   cursor: pointer;
 }
 
-.container-btn__rules .container-link {
+.container-links {
   display: block;
   color: #fff;
   text-decoration: none;
   text-align: center;
   padding: 15px;
-
 }
 
 /*new styles for hra.html*/
