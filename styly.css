@@ -90,8 +90,11 @@ body {
 }
 
 .container-btn__rules .container-link {
+  display: block;
+  color: #fff;
   text-decoration: none;
-  color: #ffffff;
+  text-align: center;
+  padding: 15px;
 
 }
 
