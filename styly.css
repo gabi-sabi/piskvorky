@@ -176,7 +176,7 @@ img {
   margin-top: 10px;
 }
 
-.container-playground.container__game--square {
+.container__game--square {
   width: 10%;
   aspect-ratio: 1 / 1;
   opacity: 0.5;
@@ -185,8 +185,8 @@ img {
   padding: 5px;
 }
 
-.container-playground .square:focus,
-.container-playground .square:hover {
+.container__game--square:focus,
+.container__game--square:hover {
   opacity: 0.45;
   cursor: pointer;
 }
