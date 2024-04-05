@@ -1,38 +1,46 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 
 body {
   background-image: linear-gradient(#615dad, #ffc8da);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .container-intro {
-  max-width: 380px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 3% auto auto auto;
-  overflow: auto;
+  max-height: 100vh;
+  max-width: 80vmin;
 }
+
 
 .container__img {
-  border-radius: 15px 15px 0 0;
-  width: 100%
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.container-game {
-  width: 100%;
+img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.container__text {
   background-color: #283e50;
 }
 
-.container-game__title {
+.container__text h1 {
+  
   font-family: "Lobster", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -40,50 +48,51 @@ body {
   color: #ffffff;
 }
 
-.container-game__text {
+.container__text p {
   text-align: center;
   color: #ffffff;
+  padding: 5px;
 }
 
-.container-btn {
-  width: 100%;
-  height: 50px;
-  border: none;
+.container__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
-.container-btn__rules,
+.container__btn--rules,
 .container-middle__home.icon {
   background-color: #1fcca4;
-  margin: 0 0 2px 0;
-  text-decoration: none;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  border-bottom: 1.5px solid black;
 }
 
-.container-btn__rules:hover,
+.container__btn--rules:hover,
 .container-middle__home.icon:hover,
-.container-btn__rules:focus,
+.container__btn-rules:focus,
 .container-middle__home.icon:focus {
   background-color: #1cbb96;
   cursor: pointer;
 }
 
-.container-btn__play,
+.container__btn--play,
 .container-middle__restart.icon {
   background-color: #0197f6;
-  text-decoration: none;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 50px;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
 
 }
 
-.container-btn__play:hover,
+.container__btn--play:hover,
 .container-middle__restart.icon:hover,
-.container-btn__play:focus,
+.container__btn--play:focus,
 .container-middle__restart.icon:focus {
   background-color: #0090e9;
   cursor: pointer;
@@ -93,21 +102,26 @@ body {
   display: block;
   color: #fff;
   text-decoration: none;
-  text-align: center;
   padding: 15px;
 }
 
 /*new styles for hra.html*/
 .container-play {
   max-width: 80vmin;
-  margin: 1rem auto 2rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: white;
 }
 
 .container-top {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
+  align-items: center;
 }
 
 .container-middle {
@@ -153,9 +167,12 @@ body {
 }
 
 .container-playground {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   border: 1.5px solid #283e50;
+  padding: 0;
+  margin-top: 10px;
 }
 
 .container-playground .square {
@@ -163,6 +180,8 @@ body {
   aspect-ratio: 1 / 1;
   opacity: 0.5;
   border: 1.5px solid #283e50;
+  flex-grow: 1;
+  padding: 5px;
 }
 
 .container-playground .square:focus,
