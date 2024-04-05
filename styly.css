@@ -177,7 +177,7 @@ img {
   margin-top: 10px;
 }
 
-.container-playground .square {
+.container-playground.square {
   width: 10%;
   aspect-ratio: 1 / 1;
   opacity: 0.5;
