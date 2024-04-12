@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+    <script type="module" src="hra.js"></script>
     <title>Hra</title>
   </head>
   <body>
@@ -18,27 +18,22 @@
       <div class="container-middle">
         <div class="container-middle left">
           <p class="container-middle__text">HRAJE:</p>
-          <button class="container-middle__circle icon">
-            <a class="link" href="./index.html"
+            <a class="link container-middle__circle icon" href="./index.html"
               ><img
+                id="current-player"
                 class="container-middle__circle img"
-                src="./assets/circle.svg"
+                src="./assets/circle.svg" alt="kolečko"
             /></a>
-          </button>
         </div>
         <div class="container-middle right">
-          <button class="container-middle__home icon">
-            <a class="link" href="./index.html"
+            <a class="link container-middle__home icon" href="./index.html"
               ><img class="container-middle__home img" src="./assets/home.svg"
             /></a>
-          </button>
-          <button class="container-middle__restart icon">
-            <a class="link" href="./hra.html"
+            <a class="link container-middle__restart icon" href="./hra.html"
               ><img
                 class="container-middle__restart img"
                 src="./assets/restart.svg"
             /></a>
-          </button>
         </div>
       </div>
       <div class="container-playground">
