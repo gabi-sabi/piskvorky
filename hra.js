@@ -13,16 +13,12 @@ const yourTurn = (event) => {
   }
 };
 
-document.querySelector("button:nth-child(1)").addEventListener("click", yourTurn);
-document.querySelector("button:nth-child(2)").addEventListener("click", yourTurn);
-document.querySelector("button:nth-child(3)").addEventListener("click", yourTurn);
-document.querySelector("button:nth-child(4)").addEventListener("click", yourTurn);
-document.querySelector("button:nth-child(5)").addEventListener("click", yourTurn);
-document.querySelector("button:nth-child(6)").addEventListener("click", yourTurn);
-document.querySelector("button:nth-child(7)").addEventListener("click", yourTurn);
-document.querySelector("button:nth-child(8)").addEventListener("click", yourTurn);
-document.querySelector("button:nth-child(9)").addEventListener("click", yourTurn);
-document.querySelector("button:nth-child(10)").addEventListener("click", yourTurn);
+
+const squares = document.querySelectorAll(".container__game--square")
+squares.forEach((square) => {
+  square.addEventListener("click", yourTurn);
+})
+
 
 document.querySelector(".container-middle__restart").addEventListener("click", (e) => {
   const userRestart = confirm("Ukončit hru?");
