@@ -30,31 +30,18 @@ const gameField = [...squares].map((square) => {
   }
   });
 
-  const winner = findWinner(gameField);
-  if (winner === "o" || winner === "x") {
-    setTimeout(() => {
-      alert(`Vyhrál hráč se symbolem ${winner}.`);
-      location.reload();
-    }, 200);
-  } else if (winner === "tie") {
-    setTimeout(() => {
-      alert("Hra skončila nerozhodně.");
-      location.reload();
-    }, 200
-  ); 
-  }
-};
   const whoWon = () => {
     const winner = findWinner(gameField);
-    if (winner === "o" || winner === "x") {
-      alert(`Vyhrál hráč se symbolem ${winner}!`);
+    if (winner === "o" || winner === 'x') {
+      alert(`Vyhrál hráč se symbolem ${winner.toUpperCase()}.`);
       location.reload();
     } else if (winner === "tie") {
-      alert("Hra skončila remízou.");
+      alert("Hra skončila nerozhodně.");
     }
   };
-    setTimeout(whoWon, 200);  
-    
+
+  setTimeout(whoWon, 200)
+};
 
 
 //yourTurn call
@@ -64,7 +51,7 @@ squares.forEach((square) => {
 
 //Restart game
 document.querySelector(".container-middle__restart").addEventListener("click", (e) => {
-  const userRestart = confirm("Chcete restartovat hru?");
+  const userRestart = confirm("Opravdu chceš restartovat hru?");
   if (userRestart === false) {
     e.preventDefault();
   }
